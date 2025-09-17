@@ -46,7 +46,7 @@ http://localhost:8080/api/email/generate
 
 and return the generated reply as plain text.
 
-Load the extension in Chrome:
+## Load the extension in Chrome:
 
 Go to chrome://extensions/
 
@@ -56,7 +56,7 @@ Click Load unpacked → select the repository folder
 
 Reload Gmail. Open Compose → you should see the Generate Reply button in the toolbar.
 
-Usage
+## Usage
 
 Open Gmail and click Compose.
 
@@ -68,7 +68,7 @@ Edit the inserted reply as needed before sending.
 
 The reply is generated in professional tone by default.
 
-File Structure
+## File Structure
 
 manifest.json – Chrome Extension Manifest (Manifest V3).
 
@@ -78,7 +78,7 @@ background.js – Handles messages from content script and communicates with bac
 
 Image.png – Icon for the extension.
 
-Development Notes
+## Development Notes
 
 Ensure the backend API is running locally.
 
@@ -88,7 +88,7 @@ Any updates to content or background scripts require Reload in chrome://extensio
 
 Gmail uses dynamic Shadow DOM; the extension observes DOM changes to handle new compose windows.
 
-Roadmap / Future Features
+## Roadmap / Future Features
 
 Tone selection in Gmail: Allow users to choose Formal, Casual, Friendly, or Professional tone directly in Gmail.
 
@@ -102,7 +102,7 @@ User preferences: Store preferred tone, default signatures, and personalization 
 
 Improved error handling: Gracefully handle API failures and show user notifications.
 
-Notes
+## Notes
 
 Currently works only with Gmail.
 
