@@ -2,7 +2,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type === "GENERATE_REPLY") {
         const emailContent = message.emailContent;
 
-        fetch("http://localhost:8080/api/email/generate", {
+        fetch("https://email-assistant-backend-147l.onrender.com/api/email/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ emailContent, tone: "professional" })
