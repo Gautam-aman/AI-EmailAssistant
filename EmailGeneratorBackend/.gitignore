@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 
 # Spring Boot properties (keep secrets out of GitHub)
+/target
 src/main/resources/application.properties
 src/main/resources/application.yml
 src/main/resources/application-*.properties
@@ -32,6 +33,7 @@ tmp/
 *.ipr
 
 ### NetBeans ###
+/target
 /nbproject/private/
 /nbbuild/
 /dist/
