@@ -1,5 +1,8 @@
 # AI EmailAssistant
 
+Check out my live app [here](https://ai-email-assistant-gilt.vercel.app/)!
+
+
 **AI EmailAssistant** is a Chrome extension that helps you **generate AI-powered email replies** directly inside Gmail. With a single click, it can draft professional responses automatically using your AI backend.
 
 > **Note:** Tone selection (Formal, Casual, Friendly, Professional) is available in the React web app version. The Gmail extension currently uses a default **professional** tone.
