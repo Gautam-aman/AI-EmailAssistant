@@ -21,12 +21,13 @@ function App() {
   const [generatedReply, setGeneratedReply] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const backendurl =import.meta.env.VITE_BACKEND_URL;
 
   const handleSubmit = async () => {
     setLoading(true)
     setError("")
     try {
-      const response = await axios.post("http://localhost:8080/api/email/generate", {
+      const response = await axios.post(`${backendurl}`, {
         emailContent,
         tone,
       })
